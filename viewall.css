@@ -1,0 +1,619 @@
+/* responsive */
+@media (min-width: 992px) {
+    .listing-head {
+        padding: 10px 0 !important;
+    }
+
+    .listing-head .container {
+        display: grid;
+        grid-template-areas: 'dropdown search menu';
+        grid-template-columns: 20% 60% 20%;
+        margin: auto;
+        height: calc(100% - 10%);
+    }
+
+    /* dropdown */
+    .dropdown {
+        grid-area: dropdown;
+
+    }
+
+    /* search group */
+    .search-group {
+        grid-area: search;
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr;
+        grid-template-areas: 'form range button';
+        border-radius: 5px;
+        margin: auto;
+        width: 100% !important;
+    }
+
+    .search-group form input {
+        padding: .7rem !important;
+    }
+
+    .search-group form {
+        grid-area: form;
+        margin: auto;
+    }
+
+    .search-group #rangeWrapper {
+        grid-area: range;
+        margin: auto;
+
+    }
+
+    .search-group .btn {
+        grid-area: button;
+        padding: .7rem !important;
+    }
+
+    /* menu */
+    .listing-head-menu button {
+        padding: .7rem 1rem !important;
+    }
+
+    .listing-head-menu .btn span {
+        transform: translate(-7px, 20px);
+        color: white;
+        width: 25px;
+        height: 25px;
+        background-color: orange;
+        border-radius: 50%;
+    }
+
+    /* 000000000000000000 */
+    /* unhide lg */
+    .listing-head-menu {
+        display: unset !important;
+        grid-area: menu;
+        margin: auto;
+    }
+
+    .listing-content-head-visible {
+        display: unset !important;
+    }
+
+    .listing-content-lg-visible {
+        display: unset !important;
+    }
+
+    .listing-content-xs-visible {
+        display: none !important;
+    }
+
+
+
+
+    /* head content lg */
+    .listing-content-head-wrapper p {
+        font-weight: bold;
+        margin: 0;
+        text-align: center;
+    }
+
+    .listing-content-head {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .listing-content-head .listing-content-head-action span {
+        text-align: center;
+        transform: translate(20px, 1px);
+        color: white;
+        width: 25px;
+        height: 25px;
+        background-color: orange;
+        border-radius: 50%;
+    }
+
+    /* content lg */
+    .odd-bg {
+        background-color: #eeeeee !important;
+    }
+
+    .listing-content-lg-setting {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .listing-content-lg p {
+        margin: 0;
+    }
+
+    .listing-content-lg {
+        margin: 10px 35px;
+    }
+
+    .fa-thumbs-up {
+        transform: scaleX(-1);
+        margin-right: 5px;
+    }
+
+    .listing-content-lg-setting a {
+        color: #6c757d;
+        text-decoration: none;
+    }
+
+    .listing-content-lg-niche a {
+        font-weight: bold;
+    }
+
+    .listing-content-lg-niche span {
+        display: block;
+        font-weight: normal;
+    }
+
+    .listing-content-lg-niche span::before {
+        content: '';
+        margin-right: 5px;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #6c757d;
+    }
+
+    .listing-content-lg-setting {
+        border: .5px solid #ffffff;
+        transition: .5s;
+    }
+
+    .listing-content-lg-setting:hover {
+        border: .5px solid #3c79cb;
+    }
+
+    .listing-content-lg-multiple p {
+        display: inline;
+        border: 2px solid #6c757d;
+        padding: 4px;
+        border-radius: 5px;
+    }
+
+    .new-listing .listing-content-lg-niche span,
+    .for-sale .listing-content-lg-niche span {
+        color: #6c757d;
+    }
+
+    .listing-content-lg-interview {
+        font-size: 25px;
+    }
+
+    .fas.fa-check {
+        color: #3c79cb;
+    }
+
+    /* newlisting color */
+    .new-listing .listing-content-lg-listing a {
+        color: orange;
+    }
+
+    .new-listing .listing-content-lg-niche a {
+        color: orange;
+    }
+
+    .new-listing .listing-content-lg-price p {
+        color: orange;
+    }
+
+    .new-listing .listing-content-lg-niche span::before {
+        background-color: orange;
+    }
+
+    /* forsale color */
+    .for-sale .listing-content-lg-listing a {
+        color: #3c79cb;
+    }
+
+    .for-sale .listing-content-lg-niche a {
+        color: #3c79cb;
+    }
+
+    .for-sale .listing-content-lg-price p {
+        color: #3c79cb;
+    }
+
+    .for-sale .listing-content-lg-niche span::before {
+        background-color: #3c79cb;
+    }
+
+    /* listing content footer */
+    .listing-content-footer {
+        margin: 50px 0;
+        padding: 35px 0;
+    }
+
+    .listing-content-footer .container {
+        padding: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .listing-content-footer .container .sales-card p {
+        margin: 0;
+    }
+
+    /* listing CTA */
+    .listing-footer-cta .cta-content {
+        transform: translate(181px, 25px);
+    }
+
+    .listing-footer-cta .cta-content h1 {
+        font-size: 50px;
+    }
+
+    .listing-footer-cta .cta-content p {
+        font-size: 30px;
+    }
+
+    .listing-footer-cta .cta-content .cta-button {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .listing-footer-cta .cta-content .cta-button input {
+        width: 97%;
+    }
+
+    .listing-footer-cta .cta-content .cta-button a {
+        height: 100%;
+        margin-top: 0 !important;
+    }
+
+    /* register button */
+    .listing-register-bottom {
+        padding: 30px 0;
+    }
+
+    .register-bottom-head h6 {
+        font-size: 20px;
+    }
+
+    .register-bottom-head h1 {
+        font-size: 40px;
+    }
+
+    .register-bottom-head .register-bottom-button {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+
+    }
+
+    .register-bottom-head .register-bottom-button a:last-child {
+        margin: 0 !important;
+    }
+
+
+
+}
+
+/* -------------------------------------------------- */
+
+/* 000000000000000000 */
+/* hide xs */
+.listing-head-menu {
+    display: none;
+}
+
+.listing-content-head-visible {
+    display: none;
+}
+
+.listing-content-xs-visible {
+    display: unset;
+}
+
+.listing-content-lg-visible {
+    display: none;
+}
+
+/* head */
+/* dropdown */
+.dropdown .btn {
+    width: 90%;
+}
+
+.dropdown-toggle::after {
+    margin-top: 10px;
+}
+
+/* search group */
+.search-group {
+    width: 90%;
+    background-color: rgb(240, 240, 240);
+}
+
+.search-group form,
+.search-group #rangeWrapper,
+.search-group .btn {
+    width: 90%;
+}
+
+/* -------------------------------------------------- */
+
+
+/* -------------------------------------------------- */
+/* slider */
+.middle {
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    z-index: 1;
+    height: 10px;
+}
+
+.slider .track {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: white;
+    border: .5px solid #3c79cb;
+}
+
+.slider .range {
+    position: absolute;
+    z-index: 2;
+    left: 25%;
+    right: 25%;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: #3c79cb;
+}
+
+.slider .thumb {
+    position: absolute;
+    z-index: 3;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: .5px solid #3c79cb;
+    border-radius: 50%;
+}
+
+.slider .thumb.left {
+    left: 25%;
+    transform: translate(0, -2px);
+}
+
+.slider .thumb.right {
+    right: 25%;
+    transform: translate(0, -2px);
+}
+
+input[type=range] {
+    position: absolute;
+    z-index: 2;
+    height: 10px;
+    width: 100%;
+    appearance: none;
+    right: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    border: 0 none;
+    background-color: red;
+    appearance: none;
+}
+
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/* listing content */
+.listing-content {
+    background-color: rgb(241, 241, 241);
+}
+
+.listing-profit p:last-child,
+.listing-price p:last-child {
+    font-size: 13px;
+}
+
+/* new listing */
+.new-listing .listing-category {
+    background-color: orange;
+}
+
+.new-listing .listing-number,
+.new-listing .listing-profit p:first-child,
+.new-listing .listing-price p:first-child {
+    color: orange;
+}
+
+/* for sale */
+.for-sale .listing-category {
+    background-color: #3c79cb;
+}
+
+.for-sale .listing-number,
+.for-sale .listing-price p:first-child {
+    color: #3c79cb;
+}
+
+/* pending sold */
+.pending-sold .listing-category {
+    background-color: #989fa8;
+}
+
+/* -------------------------------------------------- */
+
+
+/* -------------------------------------------------- */
+/* footer content */
+.listing-content-footer .sales-card i {
+    font-size: 55px !important;
+    color: orange;
+}
+
+.listing-content-footer .sales-card span {
+    display: block;
+    font-size: small;
+    color: #6c757d;
+}
+
+.listing-content-footer .sales-card p {
+    color: black;
+    line-height: 25px;
+    font-size: 25px;
+}
+
+/* -------------------------------------------------- */
+
+/* -------------------------------------------------- */
+/* text footer */
+.listing-text-footer {
+    background-color: rgb(241, 241, 241);
+}
+
+.listing-text-footer-content h2 {
+    color: black;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+/* -------------------------------------------------- */
+
+
+/* -------------------------------------------------- */
+/* footer cta */
+.listing-footer-cta {
+    position: relative;
+    height: 400px;
+    background-image: url(img/cta-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.listing-footer-cta::before {
+    background-color: rgba(14, 101, 214, 0.692);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.cta-content {
+    position: absolute;
+    z-index: 2;
+}
+
+.cta-content {
+    font-size: 18px;
+}
+
+.cta-button .btn {
+    background-color: orange;
+}
+
+/* -------------------------------------------------- */
+
+/* -------------------------------------------------- */
+/* register bottom */
+.register-bottom-head h6 {
+    color: orange;
+}
+
+.register-bottom-button a:first-child {
+    position: relative;
+    background-image: url(img/cta-img.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 80px 0 !important;
+}
+
+.register-bottom-button a:first-child::before {
+    background-color: rgba(255, 166, 0, 0.849);
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.register-button-text-for-free {
+    line-height: 10px;
+    color: white;
+    position: absolute;
+    margin-top: 25px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.register-button-text-for-free i {
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+/* -------------------------------------------------- */
+
+/* -------------------------------------------------- */
+/* learn more bottom button */
+.register-bottom-button a:last-child {
+    position: relative;
+    background-image: url(img/cta-img.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 75px 0 !important;
+}
+
+.register-bottom-button a:last-child::before {
+    background-color: rgba(0, 119, 255, 0.849);
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.learn-more-button-text {
+    line-height: 10px;
+    color: white;
+    position: absolute;
+    margin-top: 25px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.learn-more-button-text i {
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+/* -------------------------------------------------- */

@@ -1,0 +1,35 @@
+/* popular monet */
+.popular-monetization-list a .col-10 {
+    box-shadow: 0 0.1rem 3.3rem rgba(217, 223, 231, .6);
+    transition: .5s;
+}
+
+.popular-monetization-list a i {
+    color: #007cba;
+}
+
+.popular-monetization-head h1 {
+    color: #5A5E95;
+}
+
+/* logo */
+
+.popular-monetization-list a img {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+    .popular-monetization-list a:hover .col-10 {
+        box-shadow: 0 0.1rem 2.3rem rgba(173, 174, 175, 0.6);
+    }
+
+    .col-lg-3 .col-10 {
+        height: 100%;
+    }
+
+    .popular-monetization-head {
+        padding-bottom: 25px;
+    }
+}

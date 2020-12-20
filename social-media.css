@@ -1,0 +1,67 @@
+/* global */
+* a {
+    color: #337AB7;
+    text-decoration: none;
+}
+
+/* content */
+.account-image {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.account-image img {
+    height: 80px;
+}
+
+/* content table */
+.content-table p {
+    font-size: 14px;
+}
+
+/* items table */
+.table-item p,
+.table-item a {
+    font-size: 13px;
+}
+
+/* status */
+.status span {
+    font-size: 14px;
+}
+
+.status i {
+    color: #337AB7;
+}
+
+/* similar account */
+
+.similar-account .similar-account-image {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.similar-account .similar-account-image img {
+    height: 80px;
+}
+
+/* seller information */
+.seller-title,
+.offer-title {
+    background-color: #F5F5F5;
+}
+
+/* bg settings */
+@media only screen and (min-width: 992px) {
+    .grid-settings {}
+
+    .main {
+        grid-area: main;
+    }
+
+    .side {
+        grid-area: side;
+    }
+}

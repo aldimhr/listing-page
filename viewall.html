@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="viewall.css">
+
+    <title></title>
+</head>
+
+<body>
+
+    <!-- head -->
+    <div class="listing-head pb-3 bg-white">
+        <div class="container">
+
+            <!-- dropdown -->
+            <div class="dropdown d-flex justify-content-center">
+                <button class="btn btn-outline-secondary dropdown-toggle my-3 p-2 px-4 d-flex justify-content-between"
+                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    All Monetizations
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">All Monetizations</a></li>
+                    <li><a class="dropdown-item" href="#">Established Website</a></li>
+                    <li><a class="dropdown-item" href="#">Amazon FBA</a></li>
+                    <li><a class="dropdown-item" href="#">IOS App</a></li>
+                    <li><a class="dropdown-item" href="#">Android App</a></li>
+                    <li><a class="dropdown-item" href="social-media.html">Social Media</a></li>
+                    <li><a class="dropdown-item" href="#">Sass</a></li>
+                    <li><a class="dropdown-item" href="#">Digital Product</a></li>
+                    <li><a class="dropdown-item" href="#">Freelancing Accounts</a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+            </div>
+            <!-- end dropdown -->
+
+            <!-- search -->
+            <div class="search-group mx-auto">
+
+                <!-- search input -->
+                <form action="" method="POST" class="mx-auto">
+                    <div class="py-2">
+                        <input type="text" class="form-control p-2" id="exampleFormControlInput1"
+                            placeholder="Search Niche or Listing #">
+                    </div>
+                </form>
+                <!-- end search input -->
+
+                <!-- range -->
+                <div class="col-lg-2 mx-auto" id="rangeWrapper">
+                    <div class="range-price d-flex justify-content-between px-2 text-muted">
+                        <p class="mb-2 fw-bold">Price:</p>
+                        <p class="mb-2 fw-bold">$0-$6,760,000</p>
+                    </div>
+                    <div class="middle">
+                        <div class="multi-range-slider position-relative">
+                            <input type="range" id="input-left" min="0" max="100" value="25">
+                            <input type="range" id="input-right" min="0" max="100" value="75">
+
+                            <div class="slider">
+                                <div class="track"></div>
+                                <div class="range"></div>
+                                <div class="thumb left"></div>
+                                <div class="thumb right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end range -->
+
+                <!-- button -->
+                <div class="pb-3 pt-2 mt-2 d-flex justify-content-center">
+                    <div class="btn btn-primary fw-bold" id="applyButton">Apply</div>
+                </div>
+                <!-- end button -->
+
+            </div>
+            <!-- end search -->
+
+            <!-- menu lg -->
+            <div class="listing-head-menu ms-2">
+                <button class="btn btn-primary" disabled>
+                    <i class="fas fa-bars"></i>
+                </button>
+                <button type="button" class="btn btn-outline-secondary" disabled>
+                    <i class="fas fa-th-large"></i>
+                    <span class="position-absolute"><i class="fas fa-lock"></i></span>
+                </button>
+                <button type="button" class="btn btn-outline-secondary" disabled>
+                    <i class="fas fa-filter"></i>
+                    <span class="position-absolute"><i class="fas fa-lock"></i></span>
+                </button>
+                <button type="button" class="btn btn-outline-secondary" disabled>
+                    <i class="fas fa-sliders-h"></i>
+                    <span class="position-absolute"><i class="fas fa-lock"></i></span>
+                </button>
+            </div>
+            <!-- end menu lg -->
+        </div>
+    </div>
+    <!-- end head -->
+
+    <!-- content -->
+    <div class="listing-content py-3">
+
+        <!-- head lg -->
+        <div class="listing-content-head-visible">
+            <div class="listing-content-head-wrapper d-flex justify-content-center">
+                <div class="listing-content-head bg-white text-muted">
+                    <div class="listing-content-head-action">
+                        <span class="position-absolute"><i class="fas fa-lock"></i></span>
+                        <p>action</p>
+                    </div>
+                    <div class="listing-content-head-listing">
+                        <p>Listing</p>
+                    </div>
+                    <div class="listing-content-head-niche">
+                        <p>Niche & Status</p>
+                    </div>
+                    <div class="listing-content-head-monet">
+                        <p>Monetization</p>
+                    </div>
+                    <div class="listing-content-head-price">
+                        <p>Price</p>
+                    </div>
+                    <div class="listing-content-head-profit">
+                        <p>Monthly Net Profit</p>
+                    </div>
+                    <div class="listing-content-head-multiple">
+                        <p>Multiple</p>
+                    </div>
+                    <div class="listing-content-head-interview">
+                        <p>Seller Interview</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end head lg -->
+
+        <div class="listing-content-lg-visible">
+            <!-- content lg -->
+            <div class="listing-content-lg-wrapper d-flex justify-content-center flex-column m-auto">
+
+                <!-- item newlisting -->
+                <div class="odd-bg new-listing listing-content-lg-setting bg-white text-muted mx-auto">
+                    <div class="listing-content-lg listing-content-lg-action text-center">
+                        <a href="#"><i class="far fa-thumbs-up fa-lg"></i></a>
+                        <a href="#"><i class="far fa-thumbs-down fa-lg"></i></a>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-listing fw-bold text-center">
+                        <a href="listing.html">#49364</a>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-niche overflow-hidden">
+                        <a href="listing.html">Apparel & Accessories <span>New Listing</span></a>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-monetization mx-0 overflow-hidden">
+                        <p>eCommerce</p>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-price fw-bold text-center">
+                        <p>$134,866</p>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-profit text-center">
+                        <p>$134,866</p>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-multiple text-center">
+                        <p>50</p>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-interview text-center">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <!-- end item -->
+
+                <!-- item forsale -->
+                <div class="for-sale listing-content-lg-setting bg-white text-muted mx-auto">
+                    <div class="listing-content-lg listing-content-lg-action text-center">
+                        <a href="#"><i class="far fa-thumbs-up fa-lg"></i></a>
+                        <a href="#"><i class="far fa-thumbs-down fa-lg"></i></a>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-listing fw-bold text-center">
+                        <a href="listing.html">#47853</a>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-niche">
+                        <a href="listing.html">Home, Kitchenware <span>For sale</span></a>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-monetization mx-0 overflow-hidden">
+                        <p>Amazon FBA, Amazon FBM</p>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-price fw-bold text-center">
+                        <p>$5,015,008</p>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-profit text-center">
+                        <p>$36,500</p>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-multiple text-center">
+                        <p>50</p>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-interview text-center">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+                <!-- end item -->
+
+                <!-- item pending sold -->
+                <div class="odd-bg pending-sold listing-content-lg-setting bg-white text-muted mx-auto">
+                    <div class="listing-content-lg listing-content-lg-action text-center">
+                        <a href="#"><i class="far fa-thumbs-up fa-lg"></i></a>
+                        <a href="#"><i class="far fa-thumbs-down fa-lg"></i></a>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-listing fw-bold text-center">
+                        <a href="listing.html">#49364</a>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-niche">
+                        <a href="listing.html">Apparel & Accessories <span>New Listing</span></a>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-monetization mx-0 overflow-hidden">
+                        <p>eCommerce</p>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-price fw-bold text-center">
+                        <p>$134,866</p>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-profit text-center">
+                        <p>$134,866</p>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-multiple text-center">
+                        <p>50</p>
+                    </div>
+                    <div class="listing-content-lg listing-content-lg-interview text-center">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <!-- end item -->
+            </div>
+        </div>
+        <!-- end content lg -->
+
+        <!-- content xs -->
+        <div class="listing-content-xs-visible">
+            <div class="container">
+                <!-- card-1 -->
+                <div class="new-listing row mb-3">
+                    <a href="listing.html" class="text-decoration-none d-flex justify-content-center">
+                        <div class="card card-1 col-10 rounded-3 text-dark px-3">
+                            <div class="listing-number fw-bold mt-2">
+                                <p class="m-0">#49364</p>
+                            </div>
+                            <div class="listing-title fw-bold">
+                                <p class="mb-2">eCommerce</p>
+                            </div>
+                            <div class="listing-category w-100 mx-auto text-white text-center rounded-3 py-1">
+                                <p class="m-0 fw-bold">Apparel & Accessories</p>
+                            </div>
+                            <div class="profit-price-wrapper mt-2 d-flex justify-content-between">
+                                <div class="listing-profit text-muted">
+                                    <p class="mb-0 fw-bold">$134,866</p>
+                                    <p>Monthly Net Profit</p>
+                                </div>
+                                <div class="listing-price text-muted text-end">
+                                    <p class="mb-0 fw-bold">$768,277</p>
+                                    <p>Listing Price</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end card-1 -->
+
+                <!-- card-2 -->
+                <div class="for-sale row mb-3">
+                    <a href="listing.html" class="text-decoration-none d-flex justify-content-center">
+                        <div class="card card-1 col-10 rounded-3 text-dark px-3">
+                            <div class="listing-number fw-bold mt-2">
+                                <p class="m-0">#47853</p>
+                            </div>
+                            <div class="listing-title fw-bold">
+                                <p class="mb-2">Amazon FBA, Amazon FBM</p>
+                            </div>
+                            <div class="listing-category w-100 mx-auto text-white text-center rounded-3 py-1">
+                                <p class="m-0 fw-bold">Home, Kitchenware</p>
+                            </div>
+                            <div class="profit-price-wrapper mt-2 d-flex justify-content-between">
+                                <div class="listing-profit text-muted">
+                                    <p class="mb-0 fw-bold">$36,500</p>
+                                    <p>Monthly Net Profit</p>
+                                </div>
+                                <div class="listing-price text-muted text-end">
+                                    <p class="mb-0 fw-bold">$5,015,008</p>
+                                    <p>Listing Price</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end card-2 -->
+
+                <!-- card-3 -->
+                <div class="pending-sold row mb-3">
+                    <a href="listing.html" class="text-decoration-none d-flex justify-content-center">
+                        <div class="card card-1 col-10 rounded-3 text-dark px-3">
+                            <div class="listing-number fw-bold mt-2">
+                                <p class="m-0 text-muted">#47853</p>
+                            </div>
+                            <div class="listing-title fw-bold">
+                                <p class="mb-2">Amazon FBA, Amazon FBM</p>
+                            </div>
+                            <div class="listing-category w-100 mx-auto text-white text-center rounded-3 py-1">
+                                <p class="m-0 fw-bold">Home, Kitchenware</p>
+                            </div>
+                            <div class="profit-price-wrapper mt-2 d-flex justify-content-between">
+                                <div class="listing-profit text-muted">
+                                    <p class="mb-0 fw-bold">$36,500</p>
+                                    <p>Monthly Net Profit</p>
+                                </div>
+                                <div class="listing-price text-muted text-end">
+                                    <p class="mb-0 fw-bold">$5,015,008</p>
+                                    <p>Listing Price</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end card-3 -->
+
+            </div>
+        </div>
+        <!-- end content xs -->
+
+        <!-- end content -->
+
+        <!-- content footer -->
+        <div class="listing-content-footer bg-white">
+            <div class="container pt-3">
+
+                <!-- sales card -->
+                <div class="sales-card sales-card-1 fw-bold d-flex px-5">
+                    <i class="far fa-check-square pe-3 align-middle"></i>
+                    <p class="mt-1"> $22,115,551<span> Sales last 30 days</span></p>
+                </div>
+                <!-- end sales card -->
+                <!-- sales success -->
+                <div class="sales-card sales-card-2 fw-bold d-flex px-5">
+                    <i class="far fa-check-square pe-3 align-middle"></i>
+                    <p class="mt-1"> 91%<span> Sales Success Rate</span></p>
+                </div>
+                <!-- end sales success -->
+
+                <!-- sales overall -->
+                <div class="sales-card sales-card-2 fw-bold d-flex px-5">
+                    <i class="far fa-check-square pe-3 align-middle"></i>
+                    <p class="mt-1"> $192,848,415<span> Sales Overall</span></p>
+                </div>
+                <!-- end sales overall -->
+
+            </div>
+        </div>
+        <!-- end content footer -->
+
+        <!-- text footer -->
+        <div class="listing-text-footer">
+            <div class="container px-4">
+                <div class="listing-text-footer-content pt-4">
+
+                    <!-- head -->
+                    <h2>Online Businesses for Sale</h2>
+                    <div class="row">
+                        <div class="col-5 ms-3 border border-bottom border-primary"></div>
+                    </div>
+                    <!-- end head -->
+
+                    <!-- content -->
+                    <div class="text-footer-content text-muted mt-3 pb-3">
+                        <p>Whether you’re new to online business or not, the benefit of owning one should be obvious.
+                        </p>
+                        <p>Owning an online business gives you the freedom to work from anywhere in the world, whether
+                            that’s in the United States or the beaches of Thailand. As long as you have a laptop and an
+                            Internet connection you’re good to go.</p>
+                        <p>In addition to this, online business stands up well when you compare it to other popular
+                            investment opportunities. The entry points at which to acquire a business are much wider,
+                            especially when you compare it to something like real estate.</p>
+                        <p>However, this doesn’t mean that it has to be any less profitable. In fact, it’s quite the
+                            opposite. One of the most enticing factors of online business when compared to other
+                            investments
+                            is scalability.</p>
+                        <p>When you’re working with the Internet, it’s possible to have a global customer base.
+                            Improving
+                            the business you acquire has a two-fold benefit. More net profit not only speeds up the
+                            return
+                            on your investment but it also creates an even more valuable asset, meaning you could sell
+                            for a
+                            profit.</p>
+                        <p>At Tukuuzie, we have a lot more than just websites for sale. The number of different
+                            businesses that can make money online might be surprising.</p>
+                        <p>Some of the more popular business models include:</p>
+                        <ul>
+                            <li>eCommerce stores</li>
+                            <li>Amazon FBA</li>
+                            <li>Service businesses</li>
+                            <li>SaaS</li>
+                            <li>Display advertising sites</li>
+                        </ul>
+                        <p>This list is just a sample of what we have to offer, take a look around the marketplace to
+                            get a
+                            feel for the different business categories.</p>
+                        <p>It should be easy to navigate around the marketplace and find what you’re looking for. We try
+                            to
+                            give you as much information as possible about each business, including niche, monetization,
+                            asking price, gross revenue, and net profit.</p>
+                        <p>Viewing individual listings will give you a description of the business and how it’s
+                            currently
+                            being run.</p>
+                        <p>New listings get added every Monday, so make sure to check back then to find new businesses
+                            for
+                            sale. If you want to have new listings delivered straight to your inbox, sign up to our
+                            mailing
+                            list.</p>
+
+                        <!-- head  -->
+                        <h2>Why Choose a Full-Service Brokerage like Tukuuzie?</h2>
+                        <!-- end head  -->
+
+                        <p>At Tukuuzie, we have the privilege of making deals for a living. This experience has
+                            allowed us to grow a team that’s specialized in full-service M&A brokerage. Whether you’re
+                            interested in buying a small business or an eight-figure business, we have a dedicated team
+                            for
+                            each step of the process.</p>
+                        <p>This process begins before businesses even make it to our marketplace. Our vetting team vets
+                            all
+                            the businesses that apply to our marketplace to ensure the high quality remains.</p>
+                        <p>You may have noticed that we only list businesses that are already turning over a profit.
+                            This
+                            means you get a turnkey business that earns you money from the first day you get the keys.
+                            We
+                            reject the majority of business owners who apply to list on our marketplace for this very
+                            reason.</p>
+                        <p>Buying a business can be a daunting prospect, especially if you haven’t done it before. Going
+                            into it alone can leave you with a lot of work to get through. That’s why you’ll work with
+                            our
+                            sales team to not only help you find the perfect business opportunity but also guide you
+                            through
+                            the buying process.</p>
+                        <p>Many people think the buying process ends with having an offer accepted. While it’s one of
+                            the
+                            biggest steps to acquiring a new business, there’s still a lot of work to be done.
+                            Transferring
+                            the asset from the original business owner to the new one can be challenging, especially for
+                            people with little experience in online business.</p>
+                        <p class="m-0">That’s why everyone who buys with Tukuuzie gets to use our dedicated
+                            migrations team, who
+                            will take care of transferring your new business to you. Not all brokerage firms offer this,
+                            but
+                            we feel such an important stage of buying a business deserves high-end care.</p>
+                    </div>
+                    <!-- end content -->
+
+                </div>
+            </div>
+        </div>
+        <!-- end text footer -->
+
+        <!-- footer CTA -->
+        <div class="listing-footer-cta text-center text-white">
+            <div class="cta-content mt-5 mx-3">
+
+                <!-- head -->
+                <h1 class="mb-4">We Publish New Businesses Every Monday</h1>
+                <p>Enter Your Email Below to Be the First "In the Know"</p>
+                <!-- end head -->
+
+                <div class="cta-button pt-4">
+                    <input type="email" class="form-control p-3" id="form-email"
+                        placeholder="Please Enter Your Email Address*">
+                    <a href="#" class="btn text-white fw-bold w-100 p-3 mt-2">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <!-- end footer CTA -->
+
+        <!-- register bottom -->
+        <div class="listing-register-bottom">
+            <div class="container">
+                <div class="register-bottom-head text-center mt-4 mx-4">
+                    <h6 class="m-0 fw-bold">More Businesses for Sale Than Any Other Curated Marketplace</h6>
+                    <h1 class="fw-bold">Register For Our Marketplace Today</h1>
+                    <p class="text-muted">Gain access to the full Tukuuzie marketplace by creating your account and
+                        signing
+                        in.</p>
+
+                    <div class="register-bottom-button d-flex flex-column pb-2">
+                        <a href="#" class="text-dark text-decoration-none fw-bold p-5 rounded-3">
+                            <div class="register-button-text-for-free mx-5">
+                                <i class="far fa-user"></i>
+                                <p class="m-0 fw-bold h5">Click to Register for Free</p>
+                            </div>
+                        </a>
+                        <a href="#" class="text-dark my-3 text-decoration-none fw-bold p-5 rounded-3">
+                            <div class="learn-more-button-text mx-5">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <p class="m-0 fw-bold h5">Learn More</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end register bottom -->
+
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+        </script>
+
+        <!-- jquey -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+        <!-- my js -->
+        <script src="viewall.js"></script>
+</body>
+
+</html>

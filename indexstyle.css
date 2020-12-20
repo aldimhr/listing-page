@@ -1,0 +1,263 @@
+/* heading */
+
+.heading h1 {
+    color: #02075d;
+    opacity: 0.65;
+}
+
+.heading p {
+    color: #666;
+}
+
+
+/* CTA wrapper */
+@media only screen and (min-width: 992px) {
+    .cta-wrapper a {
+        border: 0.05rem solid black;
+        padding: 1rem 1.5rem;
+        border-radius: 0.3rem;
+        text-decoration: none;
+        color: black;
+        transition: 0.4s;
+    }
+
+    .cta-wrapper a span {
+        border-left: 0.05rem solid black;
+        padding-left: 1rem;
+        margin-left: 0.8rem;
+    }
+
+    .cta-wrapper a span i {
+        margin-left: 1rem;
+    }
+
+    .cta-wrapper a:hover {
+        color: white;
+        background-color: #e83e8c;
+        border: none;
+    }
+
+    .cta-wrapper a:hover span {
+        border-left: 0.05rem solid white;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .cta-wrapper a {
+        margin: auto;
+        width: 80%;
+        flex-direction: column;
+        display: flex;
+        border: 0.05rem solid black;
+        padding: .5rem 1rem;
+        border-radius: 0.3rem;
+        text-decoration: none;
+        color: black;
+        transition: 0.4s;
+    }
+
+    .cta-wrapper a span i {
+        margin-left: 1rem;
+    }
+
+    .cta-wrapper a:hover {
+        color: white;
+        background-color: #e83e8c;
+        border: none;
+    }
+
+    .cta-wrapper a:hover span {
+        border-left: 0.05rem solid white;
+    }
+}
+
+/* Listing */
+
+@media only screen and (min-width: 992px) {
+    .listing-headline {
+        color: #989fa8;
+        font-weight: 600;
+    }
+
+    .listing-item-wrapper {
+        margin-bottom: 2.5rem;
+        box-sizing: border-box;
+        display: block;
+        width: 90%;
+    }
+
+    .listing-item-row a {
+        color: black;
+        text-decoration: none;
+        box-shadow: 0 0.1rem 3.3rem rgba(217, 223, 231, .6);
+        border-radius: .3rem;
+        transition: .5s;
+    }
+
+    .listing-item-row:hover a {
+        box-shadow: 0 0.1rem 3.3rem rgba(163, 163, 163, 0.6);
+    }
+
+    .listing-item-link {
+        padding: 1.5rem 2rem;
+        border-radius: .3rem;
+        box-shadow: 0 0.1rem 3.3rem rgba(217, 223, 231, .6);
+    }
+
+
+    .listing-item-wrapper .listing-item-link .monetization h4 span {
+        display: block;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .listing-item-wrapper .listing-item-link .niche p {
+        padding: .5rem 0;
+        border: 0.1rem solid #3c79cb;
+        border-radius: 0.3rem;
+        font-weight: 600;
+        color: #3c79cb;
+    }
+
+    .listing-number p {
+        color: #3c79cb;
+        font-weight: 700;
+    }
+
+    .monthly-net-profit p {
+        font-weight: 400;
+        color: #989fa8;
+    }
+
+    .price p {
+        font-weight: 700;
+        color: #f5a622;
+    }
+
+    .xs-label {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .listing-headline {
+        display: none;
+    }
+
+    .listing-item-wrapper {
+        margin-top: 10%;
+        margin-bottom: 2.5rem;
+        box-sizing: border-box;
+        display: block;
+        width: 90%;
+    }
+
+    .listing-item-row a {
+        padding: 10px;
+    }
+
+    .monetization h4 {
+        padding-bottom: 15px;
+    }
+
+    .listing-item-link {
+        position: relative;
+    }
+
+    .listing-item-link i {
+        position: absolute;
+        top: 10px;
+    }
+
+    .justify-content-center {
+        justify-content: flex-start !important;
+    }
+
+    .xs-label .price-color {
+        color: #f5a622;
+    }
+
+    .xs-label span {
+        font-size: 14px;
+    }
+
+    .monthly-net-profit p,
+    .price p {
+        display: none;
+    }
+
+    /* ---------------- */
+
+    .listing-item-wrapper .listing-item-link .monetization h4 span {
+        display: block;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .listing-item-wrapper .listing-item-link .niche p {
+        padding: .5rem 0;
+        border: 0.1rem solid #3c79cb;
+        border-radius: 0.3rem;
+        font-weight: 600;
+        color: #3c79cb;
+    }
+
+    .listing-item-row a {
+        width: 95%;
+        margin: auto;
+        color: black;
+        text-decoration: none;
+        box-shadow: 0 0.1rem 3.3rem rgba(217, 223, 231, .6);
+        border-radius: .3rem;
+        transition: .5s;
+    }
+
+    .listing-item-row:hover a {
+        box-shadow: 0 0.1rem 3.3rem rgba(163, 163, 163, 0.6);
+    }
+
+    .listing-item-link {
+        display: flex;
+        padding: 1.5rem 2rem;
+        border-radius: .3rem;
+        box-shadow: 0 0.1rem 3.3rem rgba(217, 223, 231, .6);
+    }
+
+    .listing-number p {
+        color: #3c79cb;
+        font-weight: 700;
+    }
+
+    .monthly-net-profit p {
+        font-weight: 400;
+        color: #989fa8;
+    }
+
+    .price p {
+        font-weight: 700;
+        color: #f5a622;
+    }
+}
+
+/* button all listing */
+
+.view-all-listing-wrapper a {
+    color: black;
+}
+
+.view-all-listing-wrapper .btn {
+    border: 1px solid black;
+    transition: .5s;
+}
+
+.view-all-listing-wrapper .btn:hover {
+    border: 1px solid #e63688;
+    color: white;
+    background-color: #e63688;
+}
+
+/* icon */
+
+.icon-angle-right {
+    opacity: 0.65;
+}
